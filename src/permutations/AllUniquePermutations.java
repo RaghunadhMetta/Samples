@@ -25,7 +25,7 @@ public class AllUniquePermutations {
         return answers;
     }
 
-    private static void findPermutations(int[] nums, ArrayList<Integer> currentSet, boolean[] visited, List<List<Integer>> result) {
+    private static void findPermutations(int[] nums, List<Integer> currentSet, boolean[] visited, List<List<Integer>> result) {
         if (currentSet.size() == nums.length) {
             result.add(new ArrayList<>(currentSet));
         }
